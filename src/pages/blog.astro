@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css'
 const pageTitle = 'blog'
 ---
 
@@ -11,9 +12,11 @@ const pageTitle = 'blog'
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Inicio</a>
-    <a href="/about">Sobre mi</a>
-    <a href="/blog">Mi blog</a>
+    <nav class="nav">
+        <a href="/">Inicio</a>
+        <a href="/about">Sobre mi</a>
+        <a href="/blog">Mi blog</a>
+    </nav>
     <h1>Bienvenidos a mi {pageTitle} con Astro!!</h1>
     <p>Aquí publicaré todo mi camino de aprendizaje en Astro.</p>
     <ul>

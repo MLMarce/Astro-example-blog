@@ -1,0 +1,48 @@
+html {
+    background-color: #f1f5f9;
+    font-family: sans-serif;
+  }
+  
+  body {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    color: #f1f2f4;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    align-self: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    padding: 2px 5px ;
+    color: #748;
+  }
+  a:hover {
+    filter: brightness(2);
+  }
+
+  li {
+    list-style: none;
+  }
+  h4 {
+    color: #4fe;
+  }
