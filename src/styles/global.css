@@ -1,5 +1,5 @@
 html {
-    background-color: #f1f5f9;
+    background-color: hsl(224, 18%, 10%);
     font-family: sans-serif;
   }
   
@@ -13,8 +13,8 @@ html {
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    background: #000;
-    color: #f1f2f4;
+    background: hsl(224, 10%, 10%);
+    color: hsl(224, 20%, 94%);
   }
   
   * {
