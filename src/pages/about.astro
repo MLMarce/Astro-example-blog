@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro'
 import "../styles/global.css";
 const pageTitle = "Acerca de mi";
 
@@ -55,11 +57,7 @@ const goal = 3;
     </style>
   </head>
   <body>
-    <nav class="nav">
-      <a href="/">Inicio</a>
-      <a href="/about">Sobre mi</a>
-      <a href="/blog">Mi blog</a>
-    </nav>
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>... y mi sitio Astro!</h2>
     <p>
@@ -100,5 +98,13 @@ const goal = 3;
         <p>Mi objetivo no son 3 días.</p>
       )
     }
+    <Footer />
+    <script>
+      let hamburgerElement = document.querySelector(".hamburger");
+      hamburgerElement.addEventListener("click", (e) => {
+        document.querySelector(".nav").classList.toggle("expanded");
+        hamburgerElement.classList.toggle('closer');
+      });
+    </script>
   </body>
 </html>
