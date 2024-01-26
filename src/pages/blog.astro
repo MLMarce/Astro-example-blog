@@ -1,8 +1,8 @@
 ---
-import '../styles/global.css'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-const pageTitle = 'blog'
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+const pageTitle = "blog";
 ---
 
 <html lang="en">
@@ -18,17 +18,13 @@ const pageTitle = 'blog'
     <h1>Bienvenidos a mi {pageTitle} con Astro!!</h1>
     <p>Aquí publicaré todo mi camino de aprendizaje en Astro.</p>
     <ul>
-        <li><a href="/posts/post-1/">Publicación 1</a></li>
-        <li><a href="/posts/post-2/">Publicación 2</a></li>
-        <li><a href="/posts/post-3/">Publicación 3</a></li>
+      <li><a href="/posts/post-1/">Publicación 1</a></li>
+      <li><a href="/posts/post-2/">Publicación 2</a></li>
+      <li><a href="/posts/post-3/">Publicación 3</a></li>
     </ul>
     <Footer />
     <script>
-      let hamburgerElement = document.querySelector(".hamburger");
-      hamburgerElement.addEventListener("click", (e) => {
-        document.querySelector(".nav").classList.toggle("expanded");
-        hamburgerElement.classList.toggle('closer');
-      });
+      import "../scripts/menu";
     </script>
   </body>
 </html>
