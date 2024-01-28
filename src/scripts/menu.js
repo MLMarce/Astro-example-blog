@@ -3,3 +3,4 @@ let hamburgerElement = document.querySelector(".hamburger");
         document.querySelector(".nav").classList.toggle("expanded");
         hamburgerElement.classList.toggle('closer');
       });
+
