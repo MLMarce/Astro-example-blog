@@ -81,6 +81,29 @@ html {
   transform: rotate(-45deg);
 }
 
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 2rem;
+  align-items: center;
+
+  p {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 5px;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 636px) {
   .hamburger {
     display: none;
@@ -89,5 +112,9 @@ html {
     display: flex;
     translate: 0px;
     opacity: 1;
+  }
+
+  footer {
+    flex-direction: row;
   }
 }
